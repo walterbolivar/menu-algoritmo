@@ -1,0 +1,75 @@
+#include <iostream>
+#include <conio.h>
+
+
+using namespace std;
+
+	int contardigitos(int n){
+		int c=0;
+		while(n<0){
+		 n=n/10;
+		 c++;
+		}
+
+		return(c);
+
+	}
+
+
+	void main(){
+		int nro,r;
+		cout<<"introducir un numero:";
+			cin>>nro;
+			r=contardigitos(nro)
+				cout<<"la cantidad de digitos es:"<<r;
+
+			getch();
+
+	}
+
+	int contardigitosimpares(int n){
+		int c=0;
+		while(n<0){
+			if(n%2!=0){
+				c++;
+			}
+
+			n=n/10;
+
+		}
+
+		return(c);
+
+	}
+
+void main(){
+		int nro,r,i,opcion;
+
+		cout<<"introdusca un numero natural:";
+		cin >> nro;
+
+   do{
+		cout<<".....................menu....................";
+        cout<<"1.mostrar digitos\n";
+		cout<<"2.mostrar cantidad de digitos impares\n";
+		cout<<"0.salir\n";
+		cout<<"eliga opcion";
+		cout<<"introducir un numero:";
+		cin>>opcion;
+		switch(opcion){
+		case 1: r=contardigitos(nro)
+				cout<<"la cantidad de digitos de"<<nro<<",es.....>>>:"<<r;
+			    break;
+		case 2: i=contardigitosimpares (nro);
+			    
+			cin>>nro;
+			r=contardigitos(nro)
+				cout<<"la cantidad de digitos  es:"<<nro<<", es----->>>"<<r;
+			i=contardigitosimpares(nro);
+			    cout<<"la cantidad de digitos impares es:"<<nro<<",es---->>>"<<i;
+				break;
+		}
+
+  }while(opcion)
+
+	}
